@@ -16,7 +16,7 @@ var config = {
 
 var app = express();
 app.use(morgan('combined'));
-
+app.use(bodyParser.json());
 
 
 var articles= {
@@ -101,7 +101,7 @@ var counter=0;
 app.get('/counter', function (req, res){
     counter=counter+1;
     res.send(counter.toString());
-})
+});
 
 function hash (input, salt) {
     var hashed = crypto.pbkdf2Sync(input, salt, 10000, 512, 'sha512');
