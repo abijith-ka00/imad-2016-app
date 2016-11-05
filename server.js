@@ -1,6 +1,7 @@
 var express = require('express');
 var morgan = require('morgan');
 var path = require('path');
+var crypto = require('crypto');
 
 var app = express();
 app.use(morgan('combined'));
@@ -89,6 +90,16 @@ app.get('/counter', function (req, res){
     counter=counter+1;
     res.send(counter.toString());
 })
+
+function hash (input, salt) {
+    var hashed = crypto.pbkdf2Sync(input, salt, 10000, 512, 'sha512');
+    return hashed.toString('hex');
+}
+
+app.get('/hash/:input', function(req, res) {
+    var hashedString = hash(req.params.input, 'this-is-some-random-string');
+    res.send(hashedString);
+});
 
 app.get('/:articleName', function  (req,  res){
     var articleName= req.params.articleName;
