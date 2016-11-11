@@ -1,13 +1,7 @@
-var express = require('express');
-var morgan = require('morgan');
-var path = require('path');
-var pool = require('pg').pool;
-var crypto = require('crypto');
-var bodyParser = require("boady-parser");
+
 
 
     
-};
 
 var app = express();
 app.use(morgan('combined'));
@@ -124,7 +118,7 @@ app.post('/create-user1', function (req,res) {
     
 });
 
-app.post('/login', function (req, res) {
+
    
 app.post('/create-user1', function (req,res) {
     var username = req.body.username;
