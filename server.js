@@ -1,13 +1,5 @@
 
 
-
-    
-
-var app = express();
-app.use(morgan('combined'));
-app.use(bodyParser.json());
-
-
 var articles= {
    'article-one' :{
     title:'article-one|abijith ka',
@@ -84,68 +76,6 @@ return htmlTemplate;
 
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
-});
-
-var counter=0;
-app.get('/counter', function (req, res){
-    counter=counter+1;
-    res.send(counter.toString());
-});
-
-function hash (input, salt) {
-    var hashed = crypto.pbkdf2Sync(input, salt, 10000, 512, 'sha512');
-    return ["pbkdf2", "10000", salt, hashed.toString('hex')].join('$');
-}
-
-app.get('/hash/:input', function(req, res) {
-    var hashedString = hash(req.params.input, 'this-is-some-random-string');
-    res.send(hashedString);
-});
-
-app.post('/create-user1', function (req,res) {
-    var username = req.body.username;
-    var password = req.body.password;
-    var salt = crypto.randomBytes(128).toString('hex');
-    var dbString = hash(password, salt);
-    pool.query('INSERT INTO "user1" (username, password) VALUES ($1, $2)', [username, dbString], function (err, result) {  
-    if (err) {
-        res.status(500).send(err.toString());
-    } else {
-        res.send('User succesfulli created: ' + username);
-    
-    }
-});
-    
-});
-
-
-   
-app.post('/create-user1', function (req,res) {
-    var username = req.body.username;
-    var password = req.body.password;
-    pool.query('SELECT * FROM "user1" WHERE username = $1', [username], function (err, result) {  
-    if (err) {
-        res.status(500).send(err.toString());
-    } else {
-        if (result.rows.length===0) {
-            res.send(403).send('username/password is invalid');
-        } else {
-            var dbString = result.rows[0].pssword;
-        var salt = dbString.split('$')[2];
-        var hashedPassword= hash(password, salt);
-        if (hashedPassword === dbstring) {
-           res.send('credentials correct');
-        } else{
-            res.send(403).send('username/password is invalid');
-        }
-        
-        }
-        
-        
-    
-    }
-});
-    
 });
 
 
