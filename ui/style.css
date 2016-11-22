@@ -3,8 +3,7 @@ body {
      background-color: lightgrey;
      margin-top: 220px;
      margin-bottom: 119px;
- }
- .p {
+     border-top: 5px solid #000;
      padding-top:30px;
      padding-bottom: 69px;
      padding-left: 30px;
