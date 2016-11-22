@@ -1,13 +1,15 @@
 body {
      font-family: sans-serif;
      background-color: lightgrey;
-     background-color
+     margin-top: 220px;
+     margin-bottom: 119px;
+ }
+ .p {
      padding-top:30px;
      padding-bottom: 69px;
      padding-left: 30px;
      padding-right: 30px;
-     margin-top: 220px;
-     margin-bottom: 119px;
+     background-color: #000;
  }
  
  .center {
