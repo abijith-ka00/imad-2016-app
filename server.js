@@ -10,8 +10,8 @@ app.get('/', function (req, res) {
     res.sendFile(path.join(__dirname, 'ui' ,'index.html'));
 });
 
-app.get('/article-one', function (req, res) {
-    res.send("article-one will be served here")
+app.get('/News', function (req, res) {
+    res.send("my contact number is 9497802408")
 });
 
 app.get('/ui/style.css', function (req, res) {
