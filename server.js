@@ -16,7 +16,7 @@ app.get('/news', function (req, res) {
 
 app.get('/about', function (req, res){
     res.send("this is my first web app. this is copywrited by me.")
-})
+});
 
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
