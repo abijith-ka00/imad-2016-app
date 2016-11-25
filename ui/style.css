@@ -9,6 +9,7 @@ body {
      padding-right: 30px;
 
  }
+ 
  ul {
     list-style-type: none;
     margin: 0;
@@ -36,6 +37,7 @@ li a:hover:not(.active) {
 .active {
     background-color: #4CAF50;
  
+}
  
  .center {
      text-align: center;
