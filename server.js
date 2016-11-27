@@ -10,17 +10,15 @@ app.get('/', function (req, res) {
     res.sendFile(path.join(__dirname, 'ui' ,'index.html'));
 });
 
-app.get('/ui/about.css', function (req, res) {
+app.get('/about', function (req, res) {
     res.sendFile(path.join(__dirname, 'ui', 'about.css'));
 });
 
-app.get('/ui/about.html', function (req, res) {
+app.get('/about', function (req, res) {
     res.sendFile(path.join(__dirname, 'ui' , 'about.html'));
 });
 
-app.get('/about', function (req, res){
-    res.send("this is my first web app. this is copywrited by me.")
-});
+
 
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
