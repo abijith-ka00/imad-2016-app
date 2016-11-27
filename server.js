@@ -10,8 +10,12 @@ app.get('/', function (req, res) {
     res.sendFile(path.join(__dirname, 'ui' ,'index.html'));
 });
 
-app.get('/news', function (req, res) {
-    res.send("my contact number is 9497802408")
+app.get('/ui/about.css', function (req, res) {
+    res.sendFile(path.join(__dirname, 'ui', 'about.css'));
+});
+
+app.get('/ui/about.html', function (req, res) {
+    res.sendFile(path.join(__dirname, 'ui' , 'about.html'));
 });
 
 app.get('/about', function (req, res){
