@@ -1,5 +1,13 @@
 body {
-     background-color:#bc2200;
+     background: rgba(36,181,229,1);
+background: -moz-linear-gradient(left, rgba(36,181,229,1) 0%, rgba(24,148,201,1) 100%);
+background: -webkit-gradient(left top, right top, color-stop(0%, rgba(36,181,229,1)), color-stop(100%, rgba(24,148,201,1)));
+background: -webkit-linear-gradient(left, rgba(36,181,229,1) 0%, rgba(24,148,201,1) 100%);
+background: -o-linear-gradient(left, rgba(36,181,229,1) 0%, rgba(24,148,201,1) 100%);
+background: -ms-linear-gradient(left, rgba(36,181,229,1) 0%, rgba(24,148,201,1) 100%);
+background: linear-gradient(to right, rgba(36,181,229,1) 0%, rgba(24,148,201,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#24b5e5', endColorstr='#1894c9', GradientType=1 );
+
      margin-top:50px;
      margin-bottom: 119px;
      padding-top:30px ;
