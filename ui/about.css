@@ -39,4 +39,4 @@ p { color: #f6f6f6; font-family: 'Orienta', sans-serif; font-size: 16px; line-he
 a { color: #e8d4a7; text-decoration: none; text-align: right; padding: 15px; font-size: 20px; }
 
 
-a:hover { color: #da9650; text-decoration: blink; }
+a:hover { color: #000000; text-decoration: blink; }
