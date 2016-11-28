@@ -1,3 +1,10 @@
+
+html {
+    height: 100%;
+    background:url('https://www.google.co.in/search?q=background+images&espv=2&biw=1301&bih=678&tbm=isch&imgil=ZmWcZ1UOePDW_M%253A%253BgBSzPH4jB0FLSM%253Bhttp%25253A%25252F%25252Fwww.istockphoto.com%25252Fphotos%25252Fbackgrounds&source=iu&pf=m&fir=ZmWcZ1UOePDW_M%253A%252CgBSzPH4jB0FLSM%252C_&usg=__MteWHzoIbwlg1NOOqHf-icyHIMs%3D&ved=0ahUKEwio6Jyeo8vQAhVIOJQKHQEnCHUQyjcIMg&ei=Ugs8WKj3LMjw0ASBzqCoBw#imgrc=ZmWcZ1UOePDW_M%3A') no-repeat center center fixed;
+    background-size: cover;
+}
+
 body {
   
 
@@ -52,11 +59,6 @@ li a:hover:not(.active) {
  }
  
  
-html {
-background:url('https://www.google.co.in/search?q=background+images&espv=2&biw=1301&bih=678&tbm=isch&imgil=ZmWcZ1UOePDW_M%253A%253BgBSzPH4jB0FLSM%253Bhttp%25253A%25252F%25252Fwww.istockphoto.com%25252Fphotos%25252Fbackgrounds&source=iu&pf=m&fir=ZmWcZ1UOePDW_M%253A%252CgBSzPH4jB0FLSM%252C_&usg=__MteWHzoIbwlg1NOOqHf-icyHIMs%3D&ved=0ahUKEwio6Jyeo8vQAhVIOJQKHQEnCHUQyjcIMg&ei=Ugs8WKj3LMjw0ASBzqCoBw') no-repeat center center fixed;
-background-size: 100% auto;
--webkit-background-size: 100% auto;
--moz-background-size: 100% auto;
--o-background-size: 100% auto;
+
  
 
