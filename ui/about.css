@@ -46,6 +46,9 @@ li a:hover:not(.active) {
  
 }
  
+ .img-circle {
+    border-radius: 50%;
+}
  
  
  .img-medium {
