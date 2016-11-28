@@ -1,5 +1,5 @@
 body {
-     font-family: sans-serif;
+
      background: rgba(193,191,234,1);
 background: -moz-linear-gradient(top, rgba(193,191,234,1) 0%, rgba(206,199,236,1) 49%, rgba(216,208,239,1) 68%, rgba(235,233,249,1) 100%);
 background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(193,191,234,1)), color-stop(49%, rgba(206,199,236,1)), color-stop(68%, rgba(216,208,239,1)), color-stop(100%, rgba(235,233,249,1)));
