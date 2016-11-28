@@ -1,7 +1,10 @@
 body {
-     background: #808080; /* fallback for old browsers */
-     background: -webkit-linear-gradient(to left, #808080 , #3fada8); /* Chrome 10-25, Safari 5.1-6 */
-     background: linear-gradient(to left, #808080 , #3fada8); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+     
+
+background: #abbaab; /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #abbaab , #ffffff); /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #abbaab , #ffffff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        
      margin-top:50px;
      margin-bottom: 119px;
      padding-top:30px solid #000;
