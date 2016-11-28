@@ -54,6 +54,13 @@ li a:hover:not(.active) {
      height: 200px;
  }
  
+ .img-circle {
+    border-radius: 50%;
+     height: 200px;
+     
+ }
+ 
+ 
  .footer {
   color: #fff;
   clear: both;
