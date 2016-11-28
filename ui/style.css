@@ -59,6 +59,17 @@ li a:hover:not(.active) {
      height: 200px;
  }
  
+ .footer {
+  color: #fff;
+  clear: both;
+  margin: 0em 0em 0em 0em;
+  padding: 0.75em 0.75em;
+  background: #000;
+  position: relative;
+  top: 490px;
+  border-top: 1px solid #000;
+}
+ 
  h1 { color: #d54d7b; font-family: "Great Vibes", cursive; font-size: 165px; line-height: 160px; font-weight: normal; margin-bottom: 0px; margin-top: 40px; text-align: center; text-shadow: 0 1px 1px #fff; }
 
 
