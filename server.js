@@ -16,6 +16,10 @@ app.get('/home', function(req, res) {
     res.sendFile(path.join(__dirname, 'ui', '/'));
 });
 
+app.get('/artflow_201610041817.png', function(req, res) {
+    res.sendFile(path.join(__dirname, 'ui', 'artflow_201610041817.png'));
+});
+
 
 app.get('/ui/about.css', function (req, res) {
     res.sendFile(path.join(__dirname, 'ui', 'about.css'));
