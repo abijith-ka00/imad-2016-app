@@ -6,8 +6,7 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
-var username = document.getElementById('username').value;
-var password = document.getElementById('password').value;
+
 
 app.get('/', function (req, res) {
     res.sendFile(path.join(__dirname, 'ui' ,'index.html'));
